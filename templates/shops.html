@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./statics/shops.js" defer></script>
+    <script src="./statics/app.js" defer></script>
+    <link rel="stylesheet" href="./statics/shop.css" />
+    <link rel="stylesheet" href="./statics/navbar.css">
+    <title>FTT - shops</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+          <div class="logo">Farm To Table</div>
+          <div class="links">
+              <a href="/templates/" class="link">Home</a>
+              <a href="/templates/shops.html" class="link">Products</a>
+              <a href="/templates/orders.html" class="link">Orders</a>
+              <a href="/templates/bregister.html" class="link">Bussiness Account</a>
+              <a href="#" class="link" id="logout">Logout</a>
+          </div>
+      </div>
+      <p class="title">Markets</p>
+      <div class="mwrapper">
+      </div>
+      <p class="title">Products</p>
+      <div class="cardsWrapper" id="cards">
+      </div>
+
+      <div class="alert" id="order">
+        <div class="alertbx">
+          <p class="des">Do you want to place Order ?</p>
+          <table class="table">
+            <thead class="head">
+                <tr class="row">
+                    <th class="th">Product ID</th>
+                    <th class="th">Product Name</th>
+                    <th class="th">Quantity</th>
+                </tr>
+            </thead>
+            <tbody class="bd">
+                <tr class="row">
+                    <td class="td" id="id">122121</td>
+                    <td class="td" id="pname">Totakura akulu</td>
+                    <td class="td">
+                        <div class="options">
+                            <div class="opt" id="-">-</div>
+                            <p class="count" id="cnt">1</p>
+                            <div class="opt" id="+">+</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+          <div class="btnWrapper">
+            <button class="btn" id="place">Place</button>
+            <button class="btn" id="close">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

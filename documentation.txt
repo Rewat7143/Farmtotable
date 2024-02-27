@@ -1,0 +1,92 @@
+Project name: Farm to Table 
+
+INSTRUCTIONS TO RUN THE PROJECT
+
+1. cd into the project
+
+//install packages
+2. npm install
+
+//to run the backend server
+3. npm run dev 
+
+now run the live server in the templates folder.
+
+END OF INSTRUCTIONS
+
+
+We designed the landing ui/ux page and also created half of the backend functionality using backend framework Express.js and Nodejs. The communication between frontend and server in this project is through API's. For this project we created some endpoints, they are provided below with test data (format).
+MongoDB (no-sql database) is used in this project for storing all the user data in a json format.
+
+--- Authentication ---
+
+http://localhost:4000/auth/register
+http://localhost:4000/auth/login
+{
+  "name":"test",
+  "email":"test@test.com",
+  "addr":"mars-colony,vizag,2-3-4/2,somewhere",
+  "pass":"12345678"
+}
+{
+  "token":"dfghjsdkajhsad"
+}
+
+--- Shop creation/deletion ---
+
+http://localhost:4000/shop/
+http://localhost:4000/shop/create
+http://localhost:4000/shop/delAcc/id
+http://localhost:4000/shop/updAcc/id
+{
+    "shopname":"testingshop",
+    "addr":"mars-colony,vizag,2-3-4/2,somewhere",
+    "desc":"somewhere in the universe",
+    "dp":"img:imge/img0.img"
+}
+
+--- Products creation/deletion ---
+
+http://localhost:4000/product/all
+http://localhost:4000/product/create
+http://localhost:4000/product/delPro/product-id
+http://localhost:4000/product/updPro/product-id
+{
+  "pname": "product-1",
+  "price": 2345,
+  "desc":"this is a long discription given by merchant",
+  "stock":54,
+  "imgs":[
+    "img:imge/img1.img",
+    "img:imge/img2.img",
+    "img:imge/img3.img"
+  ]
+}
+
+--- Order placing ---
+http://localhost:4000/orders/all
+http://localhost:4000/orders/create/product-id
+http://localhost:4000/orders/delOrd/order-id
+http://localhost:4000/orders/updOrd/order-id
+{
+  "status":"placed"
+}
+
+Progress Keys: Landing ui/ux, API's (authentication, shops, products, orders) - CRUD functionality
+
+Team Members: (BATCH-6)
+1. K. Sri Neethika - 21L31A5438
+2. A. Aditya Sri - 21L31A5401
+3. K. Abhishek - 21L31A5435
+4. D. Neeraj - 21L31A5420
+5. B. Chandra Sidhardha - 22L35A5402
+
+
+eyJhbGciOiJIUzI1NiJ9.dGVzdEB0ZXN0LmNvbQ.8XezuiBi-XGFjflZA0V0xa528Hqy6iSX8fRngkQoCIQ
+
+eyJhbGciOiJIUzI1NiJ9.dGVzdDJAdGVzdC5jb20.Kihl5XYT41cWc5o1qklx9l3WFvBh-_OErlnPkDobBmA
+
+641ac624caddf2645e8dce19
+641b2684a5d2b188b4d4c29f
+641b2688a5d2b188b4d4c2a3
+641b268ea5d2b188b4d4c2a7

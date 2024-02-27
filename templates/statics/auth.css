@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-col: #3C6255;
+    --sec-col: #FFFFF1;
+}
+
+.wrapper {
+    user-select: none;
+    width: 100%;
+    background-color: var(--sec-col);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .box{
+    width: 300px;
+    height: max-content;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .title{
+    font-family: "Prata";
+    font-size: 20px;
+}
+
+.wrapper .sub{
+    font-family: "Inter";
+    font-size: 13px;
+    width: 250px;
+    text-align: center;
+}
+
+.flink {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--main-col);
+    font-family: "Prata";
+    font-size: 20px;
+}
+
+.wrapper .box .inp{
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--main-col);
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: "Inter";
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.wrapper .box .sbtn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: var(--main-col);
+    background-image: url(./imgs/pattern.png);
+    background-size: contain;
+    color: var(--sec-col);
+    font-family: "Prata";
+    border-radius: 4px;
+}
+
+.wrapper .box .sn{
+    margin-top: 20px;
+    color: var(--main-col);
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 13px;
+}
+
+.notifi{
+    width: max-content;
+    height: max-content;
+    background-color: var(--main-col);
+    color: var(--sec-col);
+    font-family: "Prata";
+    font-size: 13px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: -100%;
+    background-image: url(./imgs/pattern.png);
+    background-size: cover;
+    animation: notify 1s ease forwards;
+}
+
+@keyframes notify {
+    from {
+        right: -100%;
+    }to{
+        right: 10px;
+    }
+}

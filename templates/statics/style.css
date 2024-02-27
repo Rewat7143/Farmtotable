@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-col: #3C6255;
+    --sec-col: #FFFFF1;
+}
+
+.wrapper{
+    width: 100%;
+    height: max-content;
+    background: var(--sec-col);
+}
+
+.container{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: var(--main-col);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .htitle{
+    font-family: "Prata";
+    color: var(--sec-col);
+    font-size: 60px;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.container.home{
+    background-image: url("./imgs/bg2.jpg");
+    background-size: cover;
+}
+
+.container .op{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.373);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .hbtn{
+    width: max-content;
+    height: max-content;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: var(--sec-col);
+    color: var(--main-col);
+    font-family: "Inter";
+    font-size: 13px;
+    border: none;
+}

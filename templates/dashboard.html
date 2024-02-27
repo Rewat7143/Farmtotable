@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/statics/dash.css">
+    <link rel="stylesheet" href="../templates/statics/navbar.css">
+    <script src="../templates/statics/app.js" defer></script>
+    <script src="../templates/statics/dash.js" defer></script>
+    <title>FTT - dashboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="logo">Farm To Table</div>
+            <div class="links">
+                <a href="/templates/" class="link">Home</a>
+                <a href="/templates/shops.html" class="link">Products</a>
+                <a href="/templates/orders.html" class="link">Orders</a>
+                <a href="/templates/bregister.html" class="link">Bussiness Account</a>
+                <a href="#" class="link" id="logout">Logout</a>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <p class="title" style="width: 100%; padding-bottom: 10px;">Dashboard</p>
+            <div class="sidebar">
+                <div class="menu">
+                    <a href="/templates/dashboard.html" class="ln act">Products</a>
+                    <a href="/templates/Orders.html" class="ln">Orders</a>
+                </div>
+            </div>
+            <a href="/templates/newProd.html" class="float" id="float">Create Product</a>
+            <div class="cardsWrapper" id="cardsWrapper">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

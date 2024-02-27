@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTT - Register</title>
+    <link rel="stylesheet" href="./statics/auth.css">
+    <script src="./statics/dash.js" defer></script>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <a href="/templates/dashboard.html" class="flink">Back</a>
+        <p class="title">FARM TO TABLE</p>
+        <p class="sub">Upload New Product</p>
+        <form id="form" class="box">
+            <input type="text" placeholder="Product name" class="inp username">
+            <input type="text" placeholder="Description" class="inp email">
+            <input type="text" placeholder="Price" class="inp password">
+            <input type="text" placeholder="Stock" class="inp password">
+            <input type="file" placeholder="Image" class="inp password" id="file"  name="file">
+            <button class="sbtn" onclick="createProd()">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

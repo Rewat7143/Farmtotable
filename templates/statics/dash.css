@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-col: #3C6255;
+    --sec-col: #FFFFF1;
+}
+
+.float{
+    width: max-content;
+    height: max-content;
+    padding: 10px 15px;
+    background-color: var(--main-col);
+    color: #FFFFF1;
+    font-family: "Inter";
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+body {
+    user-select: none;
+    background-color: var(--sec-col);
+}
+
+.wrapper {
+    width: 100%;
+    height: max-content;
+}
+
+.wrapper .title {
+    font-family: "Prata";
+    font-size: 40px;
+    padding: 30px;
+    color: var(--main-col);
+}
+
+.notifi {
+    width: max-content;
+    height: max-content;
+    background-color: var(--main-col);
+    color: var(--sec-col);
+    font-family: "Prata";
+    font-size: 13px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: -100%;
+    z-index: 6;
+    background-image: url(./imgs/pattern.png);
+    background-size: cover;
+    animation: notify 1s ease forwards;
+}
+
+@keyframes notify {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 10px;
+    }
+}
+
+.wrapper .divider {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--sec-col);
+    font-family: "Prata";
+    font-size: 19px;
+    padding: 0 30px;
+    position: relative;
+    background-image: url(./imgs/pattern.png);
+    background-size: contain;
+    background-color: var(--main-col);
+}
+
+.wrapper .cardsWrapper {
+    width: 100%;
+    height: max-content;
+    margin: 20px 0 40px 0;
+    padding: 0 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.wrapper .cardsWrapper .card {
+    width: 250px;
+    height: max-content;
+    overflow: hidden;
+    padding: 10px;
+    background-color: var(--main-col);
+    color: var(--sec-col);
+    position: relative;
+}
+
+.wrapper .cardsWrapper .card .pimg {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--sec-col);
+}
+
+.wrapper .cardsWrapper .card .ptit {
+    font-family: "Prata";
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.wrapper .cardsWrapper .card .desc {
+    font-family: "Inter";
+    font-size: 12px;
+    color: #fffff196;
+}
+
+.wrapper .cardsWrapper .card .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--main-col);
+    border-bottom: 2px solid var(--sec-col);
+    border-left: 2px solid var(--sec-col);
+    padding: 10px 15px;
+    border-bottom-left-radius: 20px;
+}
+
+.wrapper .cardsWrapper .card .btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--sec-col);
+    color: var(--main-col);
+    font-family: "Inter";
+    font-size: 14px;
+    border: none;
+}
+
+.sidebar{
+    width: 100%;
+    height: 45px;
+    padding: 0 30px;
+}
+
+.sidebar .menu{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+    color: #3C6255;
+}
+
+.sidebar .menu .ln{
+    width: max-content;
+    height: max-content;
+    padding: 9px 15px;
+    color: white;
+    font-family: "Inter";
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #3c625574;
+}
+
+.sidebar .menu .ln.act{
+    background-color: #3C6255;
+}

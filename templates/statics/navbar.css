@@ -1,0 +1,33 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-col);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: var(--sec-col);
+    align-items: center;
+    font-size: 17px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.logo {
+    font-family: "Prata";
+    font-size: 14px;
+}
+
+.links {
+    width: max-content;
+    display: flex;
+    gap: 25px;
+}
+
+.links .link {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--sec-col);
+    font-family: "Inter";
+}
